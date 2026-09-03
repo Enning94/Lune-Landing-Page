@@ -17,7 +17,10 @@ jobs:
       - name: Setup Lighthouse
         run: npm install -g @lhci/cli@0.11.x
       - name: Lighthouse Report
-        run: lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=.
+        run: lhci autorun \
+            --upload.target=temporary-public-storage \
+            --collect.staticDistDir=. \
+            --collect.chromeFlags="--headless --no-sandbox --disable-gpu --disable-dev-shm-usage"
   webhint:
     name: Webhint
     runs-on: ubuntu-22.04
