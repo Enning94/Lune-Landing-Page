@@ -1,5 +1,27 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: blue;
+}
+body {
+  font-family: "Fraunces", serif;
+  background-color: #07090f;
+  color: #fff;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #07090f;
+  color: #fff;
+}
+.left-txt {
+  font-family: "Fraunces", serif;
+  color: #f0ece4;
+}
+.center-txt-wrapper {
+  display: none;
+}
+.fa-solid {
+  color: #f0ece4;
 }
